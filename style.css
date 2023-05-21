@@ -1,0 +1,193 @@
+/**********************************ESTILO GENERAL**********************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/**********************************Visualizacion MOBILE FIRST**********************************/
+/**********************************HOJA INDEX**********************************/
+/*Titulo Pagina*/
+h1 {
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 7px;
+}
+
+h2 img:first-child{
+    height: .5em;
+    width: .5em;
+    float: left;
+    padding-top: .3em;
+}
+
+h2 img:last-child{
+    height: 1em;
+    width: 1em;
+}
+
+p{
+    text-align: justify;
+}
+/* Barra de Navegacion */
+#lista_navegacion {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    text-align: center;
+}
+
+#lista_navegacion li{
+    display: inline;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+/* Footer */
+
+#footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    text-align: center;
+}
+#footer li{
+    display: inline;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+#footer img{
+    height: 7vh;
+    width: 7vh;
+}
+
+/* Seccion Historia Empresa*/
+/*mobil 360x640px*/
+.Historia img{
+    height: 20vh;
+    width: 20vh;
+}
+
+/* Seccion Mision Empresa*/
+/*mobil 360x640px*/
+.Mision img{
+    height: 20vh;
+    width: 20vh;
+}
+
+/* Seccion Vision Empresa*/
+/*mobil 360x640px*/
+.Vision img{
+    height: 20vh;
+    width: 20vh;
+}
+
+/* Seccion Valores Empresa*/
+/*mobil 360x640px*/
+.Valores img{
+    height: 20vh;
+    width: 20vh;
+}
+
+/* Seccion Fundadores Empresa*/
+/*mobil 360x640px*/
+.Fundadores img{
+    height: 20vh;
+    width: 20vh;
+}
+#titulo_fundadores img{
+    height: .5em;
+    width: .5em;
+    float: left;
+    padding-top: .3em;
+}
+
+/**********************************HOJA MODELOS**********************************/
+#catalogo_bicis {
+    display:flex;
+}
+
+#catalogo_bicis img{
+    width: 25%;
+    height:auto;
+}
+
+#catalogo_bicis img:hover{
+    opacity: 0.2;
+}
+
+#imagen_precio_bici{
+    text-align: center;
+}
+#mod_sel {
+    width: 50%;
+    height: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: .5vw;
+    background-color: rgb(33, 150, 243,0.5);
+    padding: .5vw;
+    border-radius: 10px;
+  }
+  
+.grid-container > div {
+    background-color: #a8edea;
+    text-align: center;
+    margin: none;
+    padding: none;
+    text-align:center;
+    border-radius: 10px;
+  }
+  .grid-container p{
+    text-align: center  ;
+  }
+/**********************************Contacto**********************************/
+#video_clientes{
+    text-align: center;
+}
+
+/**********************************Proveedores**********************************/
+#lista_proveedores > li{
+    height: 10vh;
+}
+
+
+/*********************************Visualizacion SMARTPHONE**********************************/
+/**********************************HOJA INDEX**********************************/
+/* Seccion Historia Empresa*/
+/*smartphone 720x1280px*/
+@media(min-width:720px){
+    h2 img:first-child{
+        height: .5em;
+        width: .5em;
+        float: left;
+        padding-top: .3em;
+        margin-left: 2vw;
+    }
+}
+
+/**********************************Visualizacion ESCRITORIO**********************************/
+/**********************************HOJA INDEX**********************************/
+/*Animacion General*/
+/*pc 1024x1280px*/
+@media(min-width:900px){
+    h2:hover{
+        background-color: aquamarine;
+    }
+}
+/* Barra de Navegacion*/
+/*pc 1024x1280px*/
+@media(min-width:1024px){
+    #lista_navegacion li:hover{
+        background-color: aquamarine;
+        font-weight:bold;
+    }
+}
