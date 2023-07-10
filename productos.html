@@ -65,10 +65,10 @@
 								<td>{{producto.nombre}}</td>
 								<td>{{producto.precio}}</td>
 								<td>{{producto.stock}}</td>
-								<td id="contenidoOculto" style="display: none;">
+								<td>
 									<img width="60" :src="producto.imagen" :alt="producto.nombre">
 								</td>
-								<td >
+								<td id="contenidoOculto" style="display: none;">
 									<a class="btn btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
                                     <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)">Eliminar</button>
 								</td>
