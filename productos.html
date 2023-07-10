@@ -56,7 +56,7 @@
 								<th scope="col">Precio</th>
 								<th scope="col">Stock</th>
 								<th scope="col">Imagen</th>
-								<th scope="col">Acciones</th>
+								<th scope="col" id="contenidoOculto" style="display: none;">Acciones</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -65,7 +65,7 @@
 								<td>{{producto.nombre}}</td>
 								<td>{{producto.precio}}</td>
 								<td>{{producto.stock}}</td>
-								<td>
+								<td id="contenidoOculto" style="display: none;">
 									<img width="60" :src="producto.imagen" :alt="producto.nombre">
 								</td>
 								<td >
