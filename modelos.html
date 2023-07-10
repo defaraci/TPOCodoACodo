@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>La Biciventa</h1>
+        <h1>La Biciventa <button id="btnMostrar" style="float: right; margin: 0.1%;">login</button></h1>
     </header>
     <nav>
         <ul id="lista_navegacion">
@@ -50,6 +50,38 @@
                 <h5>Precio en U$S</h5>
                 <p id="precio_U$S"></p>
             </div>
+        </div>
+    </section>
+    <!-- Ultima  Parte agregada!-->
+    <section>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="" v-for="producto in productos">
+                        <td scope="row">{{producto.id}}</td>
+                        <td>{{producto.nombre}}</td>
+                        <td>{{producto.precio}}</td>
+                        <td>{{producto.stock}}</td>
+                        <td>
+                            <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                        </td>
+                        <td>
+                            <a class="btn btn-primary" :href="'producto_update.html?id='+ producto.id" >Editar</a>
+                            <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 

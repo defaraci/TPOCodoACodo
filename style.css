@@ -4,12 +4,21 @@
 body{
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
 }
 
 /**********************************Visualizacion MOBILE FIRST**********************************/
 /**********************************HOJA INDEX**********************************/
 /*Titulo Pagina*/
 h1 {
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 7px;
+}
+
+#titulo_principal {
     text-align: center;
     border-width: 1px;
     border-style: solid;
